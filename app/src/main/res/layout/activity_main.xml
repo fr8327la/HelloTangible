@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,7 +14,7 @@
         android:layout_marginTop="30dp"
         android:text="COFFEE MAKER"
         android:textColor="#8B4513"
-        android:textSize="30sp"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,12 +22,91 @@
     <FrameLayout
         android:id="@+id/coffeeCup"
         android:layout_width="232dp"
-        android:layout_height="407dp"
+        android:layout_height="420dp"
+        android:background="@drawable/brown_frame"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleText">
 
     </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/colorField1"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="@drawable/coffee_color"
+        app:layout_constraintBottom_toBottomOf="@+id/coffeeCup"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup" />
+
+    <FrameLayout
+        android:id="@+id/colorField2"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="@drawable/coffee_color"
+        app:layout_constraintBottom_toTopOf="@+id/colorField1"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/colorField3"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="@drawable/coffee_color"
+        app:layout_constraintBottom_toTopOf="@+id/colorField2"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/colorField4"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="@drawable/coffee_color"
+        app:layout_constraintBottom_toTopOf="@+id/colorField3"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/colorField5"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="@drawable/coffee_color"
+        app:layout_constraintBottom_toTopOf="@+id/colorField4"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/colorField6"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="@drawable/coffee_color"
+        app:layout_constraintBottom_toTopOf="@+id/colorField5"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/colorField7"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="@drawable/coffee_color"
+        app:layout_constraintBottom_toTopOf="@+id/colorField6"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
