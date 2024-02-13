@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                         smokeImageView.setVisibility(View.VISIBLE);
                     }
                 }
-            }, i * 200);
+            }, i * 150);
         }
         colorFieldsVisible = true;
     }
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                         smokeImageView.setVisibility(View.GONE);
                     }
                 }
-            }, (colorFields.length - i - 1) * 200);
+            }, (colorFields.length - i - 1) * 150);
         }
         colorFieldsVisible = false;
     }
