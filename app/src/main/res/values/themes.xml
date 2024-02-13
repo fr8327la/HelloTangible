@@ -3,7 +3,12 @@
     <style name="Base.Theme.HelloTangible" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
     </style>
 
-    <style name="Theme.HelloTangible" parent="Base.Theme.HelloTangible" />
+    <style name="Theme.HelloTangible" parent="Base.Theme.HelloTangible" >
+    <item name="colorPrimary">@color/pink</item>
+    <item name="colorPrimaryDark">@color/pink</item>
+    </style>
+
 </resources>
