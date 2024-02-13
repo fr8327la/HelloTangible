@@ -50,7 +50,7 @@
     <FrameLayout
         android:id="@+id/colorField1"
         android:layout_width="230dp"
-        android:layout_height="60dp"
+        android:layout_height="20dp"
         android:background="@drawable/coffee_color"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/coffeeCup"
@@ -60,7 +60,7 @@
     <FrameLayout
         android:id="@+id/colorField2"
         android:layout_width="230dp"
-        android:layout_height="60dp"
+        android:layout_height="20dp"
         android:background="@drawable/coffee_color"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/colorField1"
@@ -73,7 +73,7 @@
     <FrameLayout
         android:id="@+id/colorField3"
         android:layout_width="230dp"
-        android:layout_height="60dp"
+        android:layout_height="20dp"
         android:background="@drawable/coffee_color"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/colorField2"
@@ -85,7 +85,7 @@
     <FrameLayout
         android:id="@+id/colorField4"
         android:layout_width="230dp"
-        android:layout_height="60dp"
+        android:layout_height="20dp"
         android:background="@drawable/coffee_color"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/colorField3"
@@ -97,7 +97,7 @@
     <FrameLayout
         android:id="@+id/colorField5"
         android:layout_width="230dp"
-        android:layout_height="60dp"
+        android:layout_height="20dp"
         android:background="@drawable/coffee_color"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/colorField4"
@@ -109,7 +109,7 @@
     <FrameLayout
         android:id="@+id/colorField6"
         android:layout_width="230dp"
-        android:layout_height="60dp"
+        android:layout_height="20dp"
         android:background="@drawable/coffee_color"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/colorField5"
@@ -121,10 +121,168 @@
     <FrameLayout
         android:id="@+id/colorField7"
         android:layout_width="230dp"
-        android:layout_height="60dp"
+        android:layout_height="20dp"
         android:background="@drawable/coffee_color"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/colorField6"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/colorField8"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField7"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/colorField9"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField8"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/colorField10"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField9"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/colorField11"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField10"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/colorField12"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField11"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/colorField13"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField12"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/colorField14"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField13"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/colorField15"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField14"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/colorField16"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField15"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/colorField17"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField16"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/colorField18"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField17"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/colorField19"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField18"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/colorField20"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField19"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
+        app:layout_constraintStart_toStartOf="@+id/coffeeCup">
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/colorField21"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="@drawable/coffee_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/colorField20"
         app:layout_constraintEnd_toEndOf="@+id/coffeeCup"
         app:layout_constraintStart_toStartOf="@+id/coffeeCup">
 

@@ -37,7 +37,21 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 findViewById(R.id.colorField4),
                 findViewById(R.id.colorField5),
                 findViewById(R.id.colorField6),
-                findViewById(R.id.colorField7)
+                findViewById(R.id.colorField7),
+                findViewById(R.id.colorField8),
+                findViewById(R.id.colorField9),
+                findViewById(R.id.colorField10),
+                findViewById(R.id.colorField11),
+                findViewById(R.id.colorField12),
+                findViewById(R.id.colorField13),
+                findViewById(R.id.colorField14),
+                findViewById(R.id.colorField15),
+                findViewById(R.id.colorField16),
+                findViewById(R.id.colorField17),
+                findViewById(R.id.colorField18),
+                findViewById(R.id.colorField19),
+                findViewById(R.id.colorField20),
+                findViewById(R.id.colorField21)
         };
 
         // Initialize accelerometer
