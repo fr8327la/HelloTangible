@@ -10,6 +10,8 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import org.eclipse.paho.android.service.MqttAndroidClient;
+import org.eclipse.paho.client.mqttv3.*;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
@@ -20,10 +22,16 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private SensorManager sensorManager;
     private Sensor accelerometer;
     private final float THRESHOLD = 9.8f; // Tilt threshold for hiding color fields
+    private MqttAndroidClient client;
+    final String MQTT_HOST = "tcp://broker.hivemq.com:1883";
+    final String sub_topic = "mamn01/example/arduino";
+    final String pub_topic = "mamn01/example/android";
+    final String pub_message = "Hello World!";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        connect();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -141,4 +149,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             sensorManager.unregisterListener(this);
         }
     }
+
+    public void connect() {
+
+    }
+
+    public void publish(MqttAndroidClient client, String topic, String payload) {
+
+    }
+
+    public void subscribe(MqttAndroidClient client, String topic) {
+        
+    }
+
 }
