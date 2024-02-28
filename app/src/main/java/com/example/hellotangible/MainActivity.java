@@ -17,10 +17,11 @@ import org.eclipse.paho.android.service.MqttAndroidClient;
 import org.eclipse.paho.client.mqttv3.*;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
-    private Button fakeButton;
+    //private Button fakeButton;
     private View[] colorFields;
     private ImageView smokeImageView;
     private boolean colorFieldsVisible = false;
@@ -36,11 +37,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        connect();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fakeButton = findViewById(R.id.fakeButton);
+        //fakeButton = findViewById(R.id.fakeButton);
         smokeImageView = findViewById(R.id.smokeImageView);
 
         colorFields = new View[]{
@@ -75,13 +75,15 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 sensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
             }
         }
-
+/*
         fakeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 toggleColorFieldsVisibility();
             }
         });
+*/
+        connect();
     }
 
     private void toggleColorFieldsVisibility() {
@@ -155,7 +157,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
     }
 
-
     String inTopic = "mamn01/HelloTangibleGang/arduinoSensor";
     String outTopic = "mamn01/HelloTangibleGang/androidSensor";
 
@@ -165,14 +166,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 new MqttAndroidClient(this.getApplicationContext(), "tcp://broker.hivemq.com:1883",
                         clientId);
 
-        MqttConnectOptions options = new MqttConnectOptions();
+        /*MqttConnectOptions options = new MqttConnectOptions();
         options.setMqttVersion(MqttConnectOptions.MQTT_VERSION_3_1);
         options.setCleanSession(false);
         options.setUserName("VR-Lab");
-        options.setPassword("wifivrlab1".toCharArray());
+        options.setPassword("wifivrlab1".toCharArray());*/
         try {
-            IMqttToken token = client.connect(options);
-            //IMqttToken token = client.connect();
+            //IMqttToken token = client.connect(options);
+            IMqttToken token = client.connect();
             token.setActionCallback(new IMqttActionListener() {
                 @Override
                 public void onSuccess(IMqttToken asyncActionToken) {
@@ -188,10 +189,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                         }
                         @Override
                         public void messageArrived(String topic, MqttMessage message) throws Exception {
-                            Log.d("file", message.toString());
-                            if (message.toString().equals("start")) {
+                            Log.d("file", Arrays.toString(message.getPayload()));
+                            Log.d("messageArrived", "message arrived!");
+                            //if (message.toString().equals("start")) {
                                 showColorFieldsWithDelay();
-                            }
+                            //}
 
                         }
                         @Override
@@ -233,7 +235,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
                 @Override
                 public void onSuccess(IMqttToken asyncActionToken) {
-
+                    Log.d("Subscribe", "SÖCCESSFÖLLY SÖBSCRIBED");
                 }
 
                 @Override
@@ -248,5 +250,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             e.printStackTrace();
         }
     }
+
+
 
 }
